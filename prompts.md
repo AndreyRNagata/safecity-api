@@ -34,7 +34,8 @@ o que a IA produziu e o que a equipe precisa revisar e saber explicar.
 
 ## O que a equipe deve revisar antes de entregar
 
-- [ ] Criar o repositório `safecity-api` no GitHub, subir o código e conferir o link na Ficha do README.
+- [x] Criar o repositório `safecity-api` no GitHub, subir o código e conferir o link na Ficha do README
+      (publicado em https://github.com/AndreyRNagata/safecity-api).
 - [ ] Completar na Ficha o que as demais disciplinas fazem.
 - [ ] Atualizar a Ficha do app mobile dizendo que o backend em C# já está pronto (`EXPO_PUBLIC_API_URL`).
 - [ ] Se o modelo de ML já gerou previsões reais, publicá-las com `PUT /api/zonas/{id}/previsao`
