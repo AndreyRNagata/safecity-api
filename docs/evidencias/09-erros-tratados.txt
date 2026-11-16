@@ -1,0 +1,24 @@
+### GET /api/zonas/nao-existe
+{"title":"Recurso não encontrado","status":404,"detail":"Zona 'nao-existe' não foi encontrado(a).","instance":"/api/zonas/nao-existe","traceId":"0HNQ1HE31UHFD:00000001"}
+[HTTP 404]
+
+### GET /api/ocorrencias?latitude=-23.5
+{"title":"Requisição inválida","status":400,"detail":"Para buscar por proximidade, informe latitude e longitude juntas.","instance":"/api/ocorrencias","traceId":"0HNQ1HE31UHFE:00000001"}
+[HTTP 400]
+
+### GET /api/risco?latitude=-23.55
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-5dd9f8f946300be284803529eba7d155-1c4462c6fe3d0a53-00","errors":{"longitude":["The longitude field is required."]}}
+[HTTP 400]
+
+### POST /api/ocorrencias (data no futuro)
+{"title":"Requisição inválida","status":400,"detail":"A data da ocorrência não pode estar no futuro.","instance":"/api/ocorrencias","traceId":"0HNQ1HE31UHFG:00000001"}
+[HTTP 400]
+
+### POST /api/zonas (id repetido)
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-332bcfde97c22e67de72dcc0777628d9-0fb06af38fbb443b-00","errors":{"requisicao":["The requisicao field is required."],"$.bairro":["The JSON value could not be converted to System.String. Path: $.bairro | LineNumber: 0 | BytePositionInLine: 39."]}}
+[HTTP 400]
+
+### PUT /api/zonas/se/previsao (risco 1.5 às 18h)
+{"title":"Requisição inválida","status":400,"detail":"O risco das 18h deve estar entre 0 e 1.","instance":"/api/zonas/se/previsao","traceId":"0HNQ1HE31UHFI:00000001"}
+[HTTP 400]
+

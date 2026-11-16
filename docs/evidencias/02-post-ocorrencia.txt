@@ -1,0 +1,11 @@
+POST /api/ocorrencias
+Corpo: {"tipo":"roubo","latitude":-23.544234,"longitude":-46.642411}
+
+HTTP/1.1 201 Created
+Content-Type: application/json; charset=utf-8
+Date: Fri, 13 Nov 2026 13:39:38 GMT
+Server: Kestrel
+Location: http://localhost:5080/api/ocorrencias/19
+Transfer-Encoding: chunked
+
+{"id":19,"tipo":"roubo","latitude":-23.544,"longitude":-46.642,"ocorridoEm":"2026-11-13T13:39:39.2298557+00:00","zonaId":"republica","descricao":"Roubo: o celular foi levado com violência ou ameaça.","envolveViolencia":true,"pesoNoRisco":1.5,"registradoEm":"2026-11-13T13:39:39.2355196+00:00"}

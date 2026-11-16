@@ -1,0 +1,50 @@
+[
+  {
+    "id": 19,
+    "tipo": "roubo",
+    "latitude": -23.544,
+    "longitude": -46.642,
+    "ocorridoEm": "2026-11-13T13:39:39.229+00:00",
+    "zonaId": "republica",
+    "descricao": "Roubo: o celular foi levado com violência ou ameaça.",
+    "envolveViolencia": true,
+    "pesoNoRisco": 1.5,
+    "registradoEm": "2026-11-13T13:39:39.235+00:00"
+  },
+  {
+    "id": 4,
+    "tipo": "suspeita",
+    "latitude": -23.545,
+    "longitude": -46.642,
+    "ocorridoEm": "2026-11-13T12:39:21.072+00:00",
+    "zonaId": "republica",
+    "descricao": "Atitude suspeita: comportamento que indica risco de furto no local.",
+    "envolveViolencia": false,
+    "pesoNoRisco": 0.5,
+    "registradoEm": "2026-11-13T13:39:21.21+00:00"
+  },
+  {
+    "id": 5,
+    "tipo": "furto",
+    "latitude": -23.544,
+    "longitude": -46.641,
+    "ocorridoEm": "2026-11-12T14:39:21.072+00:00",
+    "zonaId": "republica",
+    "descricao": "Furto: o celular foi levado sem violência nem ameaça.",
+    "envolveViolencia": false,
+    "pesoNoRisco": 1,
+    "registradoEm": "2026-11-13T13:39:21.21+00:00"
+  },
+  {
+    "id": 11,
+    "tipo": "furto",
+    "latitude": -23.544,
+    "longitude": -46.644,
+    "ocorridoEm": "2026-11-12T08:39:21.072+00:00",
+    "zonaId": "republica",
+    "descricao": "Furto: o celular foi levado sem violência nem ameaça.",
+    "envolveViolencia": false,
+    "pesoNoRisco": 1,
+    "registradoEm": "2026-11-13T13:39:21.21+00:00"
+  }
+]

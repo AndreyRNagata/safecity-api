@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Camada de infraestrutura: EF Core (SQLite), repositórios, migrações e carga inicial. -->
+  <PropertyGroup>
+    <RootNamespace>SafeCity.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SafeCity.Application\SafeCity.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Dados simulados (os mesmos do mock do app mobile), embutidos na DLL. -->
+    <EmbeddedResource Include="Dados\Seed\dados-iniciais.json" LogicalName="SafeCity.DadosIniciais.json" />
+  </ItemGroup>
+
+</Project>

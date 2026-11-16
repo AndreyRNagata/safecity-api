@@ -1,0 +1,133 @@
+{
+  "zonaId": "se",
+  "nome": "Praça da Sé e Estação Sé",
+  "horas": [
+    {
+      "hora": 0,
+      "risco": 0.09,
+      "nivel": "baixo"
+    },
+    {
+      "hora": 1,
+      "risco": 0.08,
+      "nivel": "baixo"
+    },
+    {
+      "hora": 2,
+      "risco": 0.04,
+      "nivel": "baixo"
+    },
+    {
+      "hora": 3,
+      "risco": 0.03,
+      "nivel": "baixo"
+    },
+    {
+      "hora": 4,
+      "risco": 0.07,
+      "nivel": "baixo"
+    },
+    {
+      "hora": 5,
+      "risco": 0.18,
+      "nivel": "baixo"
+    },
+    {
+      "hora": 6,
+      "risco": 0.32,
+      "nivel": "moderado"
+    },
+    {
+      "hora": 7,
+      "risco": 0.52,
+      "nivel": "moderado"
+    },
+    {
+      "hora": 8,
+      "risco": 0.64,
+      "nivel": "alto"
+    },
+    {
+      "hora": 9,
+      "risco": 0.66,
+      "nivel": "alto"
+    },
+    {
+      "hora": 10,
+      "risco": 0.61,
+      "nivel": "alto"
+    },
+    {
+      "hora": 11,
+      "risco": 0.7,
+      "nivel": "alto"
+    },
+    {
+      "hora": 12,
+      "risco": 0.7,
+      "nivel": "alto"
+    },
+    {
+      "hora": 13,
+      "risco": 0.7,
+      "nivel": "alto"
+    },
+    {
+      "hora": 14,
+      "risco": 0.68,
+      "nivel": "alto"
+    },
+    {
+      "hora": 15,
+      "risco": 0.69,
+      "nivel": "alto"
+    },
+    {
+      "hora": 16,
+      "risco": 0.69,
+      "nivel": "alto"
+    },
+    {
+      "hora": 17,
+      "risco": 0.76,
+      "nivel": "muito_alto"
+    },
+    {
+      "hora": 18,
+      "risco": 0.74,
+      "nivel": "alto"
+    },
+    {
+      "hora": 19,
+      "risco": 0.55,
+      "nivel": "alto"
+    },
+    {
+      "hora": 20,
+      "risco": 0.41,
+      "nivel": "moderado"
+    },
+    {
+      "hora": 21,
+      "risco": 0.29,
+      "nivel": "baixo"
+    },
+    {
+      "hora": 22,
+      "risco": 0.19,
+      "nivel": "baixo"
+    },
+    {
+      "hora": 23,
+      "risco": 0.19,
+      "nivel": "baixo"
+    }
+  ],
+  "horarioDePico": {
+    "hora": 17,
+    "risco": 0.76,
+    "nivel": "muito_alto"
+  },
+  "horariosCriticos": "8h–19h",
+  "riscoMedio": 0.4388
+}

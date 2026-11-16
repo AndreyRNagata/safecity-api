@@ -1,0 +1,64 @@
+{
+  "score": 1,
+  "indice": 100,
+  "nivel": "muito_alto",
+  "hora": 18,
+  "zona": {
+    "id": "republica",
+    "nome": "Estação República",
+    "bairro": "República",
+    "tipo": "estacao"
+  },
+  "distanciaMetros": 0,
+  "relatosProximos": 4,
+  "dentroDaArea": true,
+  "fatores": [
+    {
+      "fator": "previsao_modelo",
+      "valor": 0.9,
+      "explicacao": "O modelo prevê 90% de risco em Estação República às 18h (ajustado pela distância)."
+    },
+    {
+      "fator": "relatos_recentes",
+      "valor": 0.15,
+      "explicacao": "4 relato(s) a até 400 m nos últimos 7 dias (2 furto, 1 suspeita, 1 roubo)."
+    }
+  ],
+  "dicas": [
+    "Guarde o celular antes de passar pela catraca e ao entrar no vagão.",
+    "Evite usar o celular perto das portas: o \"puxão\" costuma acontecer na saída do trem.",
+    "Fique no meio do vagão e leve a mochila na frente do corpo."
+  ],
+  "proximasHoras": [
+    {
+      "hora": 19,
+      "risco": 0.7,
+      "nivel": "alto"
+    },
+    {
+      "hora": 20,
+      "risco": 0.54,
+      "nivel": "moderado"
+    },
+    {
+      "hora": 21,
+      "risco": 0.4,
+      "nivel": "moderado"
+    },
+    {
+      "hora": 22,
+      "risco": 0.32,
+      "nivel": "moderado"
+    },
+    {
+      "hora": 23,
+      "risco": 0.16,
+      "nivel": "baixo"
+    },
+    {
+      "hora": 0,
+      "risco": 0.16,
+      "nivel": "baixo"
+    }
+  ]
+}

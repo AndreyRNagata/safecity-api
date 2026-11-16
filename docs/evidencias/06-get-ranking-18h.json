@@ -1,0 +1,47 @@
+[
+  {
+    "posicao": 1,
+    "zonaId": "republica",
+    "nome": "Estação República",
+    "bairro": "República",
+    "tipo": "estacao",
+    "risco": 0.9,
+    "nivel": "muito_alto"
+  },
+  {
+    "posicao": 2,
+    "zonaId": "luz",
+    "nome": "Estação da Luz",
+    "bairro": "Luz",
+    "tipo": "estacao",
+    "risco": 0.83,
+    "nivel": "muito_alto"
+  },
+  {
+    "posicao": 3,
+    "zonaId": "dom-pedro",
+    "nome": "Terminal Parque Dom Pedro II",
+    "bairro": "Sé",
+    "tipo": "terminal",
+    "risco": 0.76,
+    "nivel": "muito_alto"
+  },
+  {
+    "posicao": 4,
+    "zonaId": "se",
+    "nome": "Praça da Sé e Estação Sé",
+    "bairro": "Sé",
+    "tipo": "estacao",
+    "risco": 0.74,
+    "nivel": "alto"
+  },
+  {
+    "posicao": 5,
+    "zonaId": "itaquera",
+    "nome": "Terminal Corinthians-Itaquera",
+    "bairro": "Itaquera",
+    "tipo": "terminal",
+    "risco": 0.68,
+    "nivel": "alto"
+  }
+]

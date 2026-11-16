@@ -1,0 +1,14 @@
+<Project>
+  <!-- Configurações comuns a todos os projetos da solução. -->
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <!-- Permite rodar em máquinas que só têm um runtime mais novo (.NET 8, 9...). -->
+    <RollForward>Major</RollForward>
+    <!-- Gera o XML dos comentários /// usados pelo Swagger. -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591;NETSDK1138</NoWarn>
+  </PropertyGroup>
+</Project>

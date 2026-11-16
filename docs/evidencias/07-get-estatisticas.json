@@ -1,0 +1,101 @@
+{
+  "periodoDias": 30,
+  "desde": "2026-10-14T13:39:40.2724902+00:00",
+  "totalOcorrencias": 19,
+  "porTipo": [
+    {
+      "tipo": "furto",
+      "total": 8,
+      "percentual": 42.1
+    },
+    {
+      "tipo": "roubo",
+      "total": 4,
+      "percentual": 21.1
+    },
+    {
+      "tipo": "suspeita",
+      "total": 4,
+      "percentual": 21.1
+    },
+    {
+      "tipo": "tentativa",
+      "total": 3,
+      "percentual": 15.8
+    }
+  ],
+  "porZona": [
+    {
+      "zonaId": "paulista-masp",
+      "zonaNome": "Av. Paulista – MASP e Trianon",
+      "total": 6
+    },
+    {
+      "zonaId": "republica",
+      "zonaNome": "Estação República",
+      "total": 4
+    },
+    {
+      "zonaId": "paulista-consolacao",
+      "zonaNome": "Av. Paulista × R. da Consolação",
+      "total": 3
+    },
+    {
+      "zonaId": "se",
+      "zonaNome": "Praça da Sé e Estação Sé",
+      "total": 3
+    },
+    {
+      "zonaId": "augusta",
+      "zonaNome": "Rua Augusta (Baixo Augusta)",
+      "total": 3
+    }
+  ],
+  "porFaixaHoraria": [
+    {
+      "faixa": "Madrugada (0h–5h)",
+      "total": 4
+    },
+    {
+      "faixa": "Manhã (6h–11h)",
+      "total": 6
+    },
+    {
+      "faixa": "Tarde (12h–17h)",
+      "total": 7
+    },
+    {
+      "faixa": "Noite (18h–23h)",
+      "total": 2
+    }
+  ],
+  "zonasMaisCriticasAgora": [
+    {
+      "posicao": 1,
+      "zonaId": "bras",
+      "nome": "Estação Brás e Rua Oriente",
+      "bairro": "Brás",
+      "tipo": "terminal",
+      "risco": 0.78,
+      "nivel": "muito_alto"
+    },
+    {
+      "posicao": 2,
+      "zonaId": "santo-amaro",
+      "nome": "Largo 13 de Maio",
+      "bairro": "Santo Amaro",
+      "tipo": "praca",
+      "risco": 0.69,
+      "nivel": "alto"
+    },
+    {
+      "posicao": 3,
+      "zonaId": "se",
+      "nome": "Praça da Sé e Estação Sé",
+      "bairro": "Sé",
+      "tipo": "estacao",
+      "risco": 0.61,
+      "nivel": "alto"
+    }
+  ]
+}

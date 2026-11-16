@@ -1,0 +1,90 @@
+### SafeCity API — requisições de exemplo
+### Rode a API (dotnet run --project src/SafeCity.Api) e execute cada bloco
+### no Visual Studio, Rider ou VS Code (extensão REST Client).
+
+@api = http://localhost:5080/api
+
+### Zonas de risco (contrato do app mobile)
+GET {{api}}/zonas
+
+### Filtrar por bairro e tipo
+GET {{api}}/zonas?bairro=Consola&tipo=avenida
+
+### Detalhe de uma zona
+GET {{api}}/zonas/republica
+
+### Previsão de 24 horas, com horários críticos
+GET {{api}}/zonas/se/previsao
+
+### Ranking das zonas mais perigosas às 18h
+GET {{api}}/zonas/ranking?hora=18&limite=5
+
+### Relatos vinculados a uma zona
+GET {{api}}/zonas/republica/ocorrencias
+
+### Risco agora na Estação República
+GET {{api}}/risco?latitude=-23.5442&longitude=-46.6424
+
+### Risco na Estação República às 18h
+GET {{api}}/risco?latitude=-23.5442&longitude=-46.6424&hora=18
+
+### Relatos (contrato do app mobile)
+GET {{api}}/ocorrencias
+
+### Só roubos
+GET {{api}}/ocorrencias?tipo=roubo
+
+### Relatos a até 500 m de um ponto
+GET {{api}}/ocorrencias?latitude=-23.5442&longitude=-46.6424&raioMetros=500
+
+### Novo relato (mesmo corpo que o app envia)
+POST {{api}}/ocorrencias
+Content-Type: application/json
+
+{
+  "tipo": "furto",
+  "latitude": -23.5442,
+  "longitude": -46.6424
+}
+
+### Erro tratado: tipo inválido (400)
+POST {{api}}/ocorrencias
+Content-Type: application/json
+
+{
+  "tipo": "assalto",
+  "latitude": -23.5442,
+  "longitude": -46.6424
+}
+
+### Nova zona
+POST {{api}}/zonas
+Content-Type: application/json
+
+{
+  "id": "anhangabau",
+  "nome": "Vale do Anhangabaú",
+  "bairro": "Centro",
+  "tipo": "praca",
+  "latitude": -23.5458,
+  "longitude": -46.6364,
+  "raioMetros": 300,
+  "riscoPorHora": [0.12, 0.1, 0.08, 0.06, 0.05, 0.1, 0.22, 0.4, 0.48, 0.42, 0.38, 0.4, 0.45, 0.42, 0.4, 0.44, 0.52, 0.66, 0.7, 0.58, 0.44, 0.32, 0.22, 0.16],
+  "ocorrenciasUltimos30Dias": 150,
+  "dicas": ["Evite atravessar o vale mexendo no celular, principalmente à noite."]
+}
+
+### Nova previsão publicada pelo modelo de Machine Learning
+PUT {{api}}/zonas/anhangabau/previsao
+Content-Type: application/json
+
+{
+  "riscoPorHora": [0.1, 0.08, 0.06, 0.05, 0.05, 0.1, 0.2, 0.38, 0.46, 0.4, 0.36, 0.38, 0.42, 0.4, 0.38, 0.42, 0.5, 0.68, 0.74, 0.6, 0.45, 0.3, 0.2, 0.14],
+  "ocorrenciasUltimos30Dias": 162
+}
+
+### Remover a zona
+DELETE {{api}}/zonas/anhangabau
+
+### Indicadores dos últimos 30 dias
+GET {{api}}/estatisticas?dias=30

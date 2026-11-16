@@ -1,0 +1,15 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+TestResults/
+*.trx
+
+## Banco SQLite local (é recriado ao rodar a API)
+*.db
+*.db-shm
+*.db-wal
